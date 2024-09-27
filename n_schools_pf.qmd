@@ -152,7 +152,7 @@ cat("****Parameters Estimated From Model****","\n",
 
 ### Our Procedure
 
-We will run the N school problem from 8 to 80 schools using the parameters we found from HMC. For each number of schools from 8 to 80, we generate new data as shown below.
+We will run the N school problem from 8 to 150 schools by 2, 10 times each using the parameters we found from HMC. For each simulation, we generate new data as shown below.
 
 ```{r}
 #| eval: false

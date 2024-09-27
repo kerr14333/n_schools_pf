@@ -1,3 +1,5 @@
 project:
     type: website
     output-dir: docs
+    resources:
+        - "n_schools_pf_files/*"
