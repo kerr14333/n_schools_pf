@@ -1,9 +1,8 @@
 ---
 title: "Behavior of N Schools Problem with Pathfinder"
-format: 
+format:
     html:
         page-layout: full
-editor: source
 ---
 
 ```{css, echo = FALSE}
