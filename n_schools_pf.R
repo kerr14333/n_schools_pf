@@ -228,7 +228,7 @@ library(scales)
 
 df_summary %>% ggplot(aes(x=nschools,y=n_unique_draws)) + 
                geom_boxplot() + 
-               scale_x_discrete(breaks=c(seq(from=8,to=150,by=6),150)) +
+               scale_x_discrete(breaks=as.factor(c(seq(from=8,to=150,by=6),150))) +
                labs(title="Number of Unique Rows Out of 3000 Draws \nby Number of Schools in Simulation",
                     y = "Number of Unique Draws", 
                     x="Number of Schools in Simulation") + 
