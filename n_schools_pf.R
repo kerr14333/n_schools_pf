@@ -222,8 +222,9 @@ results <- mclapply(N_tot,myloop,mc.preschedule=F,mc.cores=40)
 
 ## -----------------------------------------------------------------------------
 #| echo: true
+#| out-width: 90%
 
-df_summary %>% ggplot(aes(x=nschools,y=n_unique_draws)) + geom_boxplot() + geom_point(size=2) +
+df_summary %>% ggplot(aes(x=nschools,y=n_unique_draws)) + geom_boxplot() + geom_point(size=.5) +
   labs(title="Number of Unique Rows Out of 3000 Draws by Number of Schools in Simulation", y = "Number of Unique Draws", x="Number of Schools in Simulation") + theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1,size=10))
 
 
